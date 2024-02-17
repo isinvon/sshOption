@@ -428,7 +428,8 @@ def main():
         4. 删除服务器信息
         5. 上传文件到服务器
         6. 从服务器下载文件
-        7. 退出
+        7. 输出脚本所在路径
+        8. 退出
         ----------------
         """)
         choice = input("请选择操作: ")
@@ -461,6 +462,8 @@ def main():
             # 从服务器下载文件到本地
             download_file()
         elif choice == '7':
+            print(f"\033[32m脚本所在路径: {script_dir}\033[0m")
+        elif choice == '8':
             print("退出程序")
             sys.exit(0)
         else:

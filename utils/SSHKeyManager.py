@@ -88,3 +88,10 @@ class SSHKeyManager:
             elif self.check_remote_key(public_key):
                 print("本机公钥已经存在于远程服务器上，无需再次添加。")
 
+
+
+""" # 使用示例 
+if __name__ == '__main__':
+    ssh = SSHKeyManager(remote_host='192.168.11.92', remote_port=8022,username='u0_a211',password='xxxx').add_public_key_to_remote_if_needed()
+
+ """
