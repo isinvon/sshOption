@@ -1,10 +1,10 @@
 华为云:
-  ip: 139.9.192.229
-  password: ***REMOVED***...
+  ip: 139.132.92.229
+  password: ssss
   port: '22'
   user: root
 联想小主机:
   ip: 192.168.1.5
-  password: ***REMOVED***
+  password: sdss
   port: '22'
-  user: lin
+  user: dasds
