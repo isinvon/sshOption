@@ -1,45 +1,10 @@
-'11':
-  ip: lls.siiiivom.com
-  password: sinvonllop
-  port: '99'
-  user: '11'
-ANNNi:
-  ip: 192.168.1.67
-  password: uslin...
-  port: 22
-  user: lin
-lenovo:
-  ip: 192.168.100.6
-  password: liuanglao...
-  port: 22
-  user: xiaoming
-lin:
-  ip: 1.1.1.1
-  password: xiaoliuzhanglao
-  port: '22'
-  user: lin
-s小adasda主机:
-  ip: 192.168.1.6
-  password: mingmingxin...
-  port: 77
-  user: linxxx
-亚马逊:
-  ip: www.zhongguoweida.com
-  password: zhongguoweida666
-  port: '78070'
-  user: root
 华为云:
-  ip: 139.9.99.778
-  password: singing...
+  ip: 139.9.192.229
+  password: ***REMOVED***...
   port: '22'
   user: root
-百度云:
-  ip: www.baidu.com
-  password: userssstnamess
-  port: 22
-  user: 小李
 联想小主机:
-  ip: 192.168.100.16
-  password: 171743linxx
-  port: 22
-  user: sinbom
+  ip: 192.168.1.5
+  password: ***REMOVED***
+  port: '22'
+  user: lin

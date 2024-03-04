@@ -366,7 +366,7 @@ def upload_file():
         SCPClientWrapper().upload_file(hostname=remote_ip, port=remote_port, local_folder=local_folder,
                                        remote_username=remote_username, remote_path=remote_folder, recursive=True)
     except Exception as e:
-        print('\033[31m' + '文件上传失败，请确认服务器或路径信息正确后重新上传，报错信息为： {e}' + '\033[0m')
+        print('\033[31m' + f'文件上传失败，请确认服务器或路径信息正确后重新上传，报错信息为： {e}' + '\033[0m')
 
 
 def download_file():

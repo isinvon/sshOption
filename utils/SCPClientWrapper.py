@@ -65,17 +65,19 @@ class SCPClientWrapper:
 
         # 定义打印文件传输进度的回调
         def progress_callback(filename, size, sent):
-            nonlocal total_files, transferred_files
+            # 声明 total_files, transferred_files 是 progress_callback()外部的变量
+            nonlocal total_files, transferred_files 
 
             # 文件传输开始时，增加已传输文件数
             if sent == 0:
                 transferred_files += 1
-                return  # 避免在文件传输开始时打印进度
-
-            # 计算并显示整体进度
-            percentage = (transferred_files / total_files) * 100
-            sys.stdout.write(f"\033[33m({hostname}:{port})传输进度： {percentage:.2f}%   \r\033[0m")
-            sys.stdout.flush()  # 确保实时输出
+                
+                # 确保在计算百分比之前total_files已经有正确的值
+                if total_files > 0:
+                    percentage = (transferred_files / total_files) * 100
+                    sys.stdout.write(f"\033[33m({hostname}:{port})传输进度： {percentage:.2f}%   \r\033[0m")
+                    sys.stdout.flush()  # 确保实时输出
+                return
 
         # 获取要传输的文件列表，以计算总文件数
         def get_file_list(folder, recursive=False):
